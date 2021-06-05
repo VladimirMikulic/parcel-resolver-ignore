@@ -1,0 +1,5 @@
+https://github.com/parcel-bundler/parcel/issues/1087
+https://github.com/parcel-bundler/parcel/issues/1186
+https://github.com/parcel-bundler/parcel/issues/2398
+https://github.com/parcel-bundler/parcel/issues/1719
+https://github.com/parcel-bundler/parcel/issues/6233
