@@ -35,7 +35,7 @@ importing files that Parcel doesn't recognize and throws an error.
 This is where `parcel-resolver-ignore` comes into play.
 You can find example use-cases below.
 
-> ℹ️ NOTE: Examples below are HTMl files, but the plugin works with EVERY file (i.e. CSS).
+> ℹ️ NOTE: Examples below are HTML files, but the plugin works with EVERY file (i.e. CSS).
 
 1. Excluding files from processing
 
