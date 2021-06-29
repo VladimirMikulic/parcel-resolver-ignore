@@ -115,6 +115,9 @@ You can find example use-cases below.
 ```sh
 parcel build src/index.html # Success!
 ```
+## :wrench: Troubleshooting
+
+If you ran Parcel just before adding this plugin, it's possible that stale Parcel caches are causing build failures. First, try to delete the caches folder `.parcel-cache` in your project's root directory.
 
 ## :man: Author
 
