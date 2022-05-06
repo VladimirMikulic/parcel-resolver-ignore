@@ -83,8 +83,9 @@ You can find example use-cases below.
 ```jsonc
 {
   // An array of Regex patterns
-  "parcelIgnore": 
-    ["{{*.*}}"]
+  "parcelIgnore": [
+    "{{*.*}}"
+  ]
 }
 ```
 
