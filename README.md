@@ -108,7 +108,7 @@ You can find example use-cases below.
 </html>
 ```
 
-3. Ignoring files depending on NODE_ENV value "development" (`parcel serve`) or "production" (`parcel build`)
+3. Ignoring files based on NODE_ENV value : "development" (`parcel serve`) or "production" (`parcel build`) or others
 
 **package.json**
 
@@ -116,13 +116,16 @@ You can find example use-cases below.
 {
   // An object containing dev and/or prod files to ignore
   "parcelIgnore": {
-    "dev": [
+    "development": [
       "privacy-policy.html",
       "images\/*.*"
     ],
-    "prod": [
+    "production": [
       "jquery.min.js",
       "images\/*.*"
+    ],
+    "test": [
+      "jquery.min.js"
     ]
   }
 }
