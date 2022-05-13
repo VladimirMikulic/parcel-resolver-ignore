@@ -21,6 +21,6 @@
   "author": "Vladimir Mikulic",
   "license": "MIT",
   "devDependencies": {
-    "parcel": "^2.3.2"
+    "parcel": "^2.5.0"
   }
 }

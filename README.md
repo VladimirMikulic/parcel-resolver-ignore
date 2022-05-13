@@ -45,12 +45,11 @@ You can find example use-cases below.
 {
   // An array of Regex patterns
   "parcelIgnore": [
-    "jquery.min.js"
+    "jquery.min.js",
     "privacy-policy.html",
-    "images\/*.*",
+    "images\/*.*"
   ]
 }
-
 ```
 
 **index.html**
@@ -70,8 +69,8 @@ You can find example use-cases below.
     <a href="./privacy-policy.html">File not available at build time.</a>
 
     <!-- These won't be processed by Parcel -->
-    <img src="./images/my-image.png" alt="my PNG image">
-    <img src="./images/my-image.jpg" alt="my JPG image">
+    <img src="./images/my-image.png" alt="my PNG image" />
+    <img src="./images/my-image.jpg" alt="my JPG image" />
     <script src="jquery.min.js"></script>
   </body>
 </html>
@@ -88,7 +87,6 @@ You can find example use-cases below.
     "{{*.*}}"
   ]
 }
-
 ```
 
 **index.html**
@@ -110,11 +108,60 @@ You can find example use-cases below.
 </html>
 ```
 
+3. Ignoring files based on NODE_ENV value : "development" (`parcel serve`) or "production" (`parcel build`) or custom.
+
+**package.json**
+
+```jsonc
+{
+  // An object containing dev and/or prod files to ignore
+  "parcelIgnore": {
+    "development": [
+      "privacy-policy.html",
+      "images\/*.*"
+    ],
+    "production": [
+      "jquery.min.js",
+      "images\/*.*"
+    ],
+    "test": [
+      "jquery.min.js"
+    ]
+  }
+}
+
+```
+
+**index.html**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>My Title</h1>
+    <!-- This won't throw build error -->
+    <a href="./privacy-policy.html">File not available at build time.</a>
+
+    <!-- These won't be processed by Parcel -->
+    <img src="./images/my-image.png" alt="my PNG image" />
+    <img src="./images/my-image.jpg" alt="my JPG image" />
+    <script src="jquery.min.js"></script>
+  </body>
+</html>
+```
+
 ### 🚀 Build
 
 ```sh
 parcel build src/index.html # Success!
 ```
+
 ## :wrench: Troubleshooting
 
 If you ran Parcel just before adding this plugin, it's possible that stale Parcel caches are causing build failures. First, try to delete the caches folder `.parcel-cache` in your project's root directory.
