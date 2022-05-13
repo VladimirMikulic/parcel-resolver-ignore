@@ -108,7 +108,7 @@ You can find example use-cases below.
 </html>
 ```
 
-3. Ignoring files based on NODE_ENV value : "development" (`parcel serve`) or "production" (`parcel build`) or others
+3. Ignoring files based on NODE_ENV value : "development" (`parcel serve`) or "production" (`parcel build`) or custom.
 
 **package.json**
 
