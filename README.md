@@ -47,7 +47,7 @@ You can find example use-cases below.
   "parcelIgnore": [
     "jquery.min.js",
     "privacy-policy.html",
-    "images\/*.*"
+    "images/.+"
   ]
 }
 ```
@@ -84,7 +84,7 @@ You can find example use-cases below.
 {
   // An array of Regex patterns
   "parcelIgnore": [
-    "{{*.*}}"
+    "{{.*}}"
   ]
 }
 ```
@@ -118,11 +118,11 @@ You can find example use-cases below.
   "parcelIgnore": {
     "development": [
       "privacy-policy.html",
-      "images\/*.*"
+      "images/.+"
     ],
     "production": [
       "jquery.min.js",
-      "images\/*.*"
+      "images/.+"
     ],
     "test": [
       "jquery.min.js"
