@@ -84,7 +84,7 @@ You can find example use-cases below.
 {
   // An array of Regex patterns
   "parcelIgnore": [
-    "\\{\\{.*}}"
+    "{{.*}}"
   ]
 }
 ```
