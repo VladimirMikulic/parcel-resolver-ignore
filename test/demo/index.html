@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>My Title</h1>
+  <!-- This won't throw build error -->
+  <a href="./privacy-policy.html">File not available at build time.</a>
+
+  <!-- These won't be processed by Parcel -->
+  <img src="./images/my-image.png" alt="my PNG image" />
+  <img src="./images/my-image.jpg" alt="my JPG image" />
+  <script src="jquery.min.js"></script>
+</body>
+
+</html>

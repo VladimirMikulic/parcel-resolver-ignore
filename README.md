@@ -2,6 +2,7 @@
 
 ![Version](https://img.shields.io/npm/v/parcel-resolver-ignore)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
+[![CI](https://github.com/VladimirMikulic/parcel-resolver-ignore/actions/workflows/ci.yml/badge.svg)](https://github.com/VladimirMikulic/parcel-resolver-ignore/actions)
 [![Twitter: VladoDev](https://img.shields.io/twitter/follow/VladoDev.svg?style=social)](https://twitter.com/VladoDev)
 
 > 🌀 Parcel plugin that allows you to ignore assets/import syntax from bundling.
