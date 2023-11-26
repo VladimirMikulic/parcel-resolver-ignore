@@ -26,8 +26,8 @@
   },
   "author": "Vladimir Mikulic",
   "license": "MIT",
-  "peerDependencies": {
-    "parcel": ">=2.0.0"
+  "dependencies": {
+    "@parcel/plugin": "^2.9.1"
   },
   "devDependencies": {
     "parcel": "^2.9.1"
