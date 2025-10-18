@@ -1,6 +1,6 @@
 {
   "name": "parcel-resolver-ignore",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "Parcel plugin that allows you to ignore assets/import syntax from bundling.",
   "main": "lib/index.js",
   "scripts": {
@@ -27,9 +27,9 @@
   "author": "Vladimir Mikulic",
   "license": "MIT",
   "dependencies": {
-    "@parcel/plugin": "^2.10.3"
+    "@parcel/plugin": "^2.16.0"
   },
   "devDependencies": {
-    "parcel": "^2.10.3"
+    "parcel": "^2.16.0"
   }
 }
